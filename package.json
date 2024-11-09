@@ -1,13 +1,18 @@
 {
   "scripts": {
-    "dev": "bun run --hot src/index.tsx"
+    "dev": "bun run --hot src/index.tsx",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "drizzle-orm": "^0.29.3",
+    "@libsql/client": "^0.14.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
     "hono": "^3.12.6"
   },
   "devDependencies": {
     "@types/bun": "^1.0.0",
-    "drizzle-kit": "^0.20.13"
+    "drizzle-kit": "^0.28.0"
   }
 }

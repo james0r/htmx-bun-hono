@@ -7,4 +7,4 @@ export const todos = sqliteTable('todos', {
   timestamp: text('timestamp').default(sql`CURRENT_TIMESTAMP`).notNull(),
 });
 
-export type Todo = InferSelectModel<typeof todos>;
+export type SelectTodo = InferSelectModel<typeof todos>;
